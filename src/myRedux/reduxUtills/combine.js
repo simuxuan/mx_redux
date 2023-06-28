@@ -26,6 +26,7 @@ function reducer(state = {}, action) {
  * @description 合并reducers
  * @param {*} reducerObj 传入需要合并的reducer对象
  * @returns 返回合并后的reducer
+ * 总结：父子结点reducer，reducer设计，每个reducer都是一个结点
  */
 const combineReducers = function (reducerObj) {
     let keys = Object.keys(reducerObj)
