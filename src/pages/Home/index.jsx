@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
-import { connect } from "react-redux"
+// import { connect } from "react-redux"
 import { addNumberAction, subNumberAction } from '../../store/counter'
+import { connect } from '../../myRedux/reduxUtills/connect'
+import store from '../../store'
 
 export class About extends PureComponent {
 
@@ -46,4 +48,4 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 
-export default connect(mapStateToProps,mapDispatchToProps)(About)
+export default connect(mapStateToProps,mapDispatchToProps,store)(About)

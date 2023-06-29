@@ -17,6 +17,5 @@ const reducer = combineReducers({
 // const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({trace: true}) || compose;
 let store = createStore(reducer)
 store = applyMiddleware(store,[logger])
-console.log(store.dispatch);
 
 export default store
